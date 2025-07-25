@@ -5,6 +5,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 from sklearn.model_selection import train_test_split
 
+# due to file size, I have not pushed the image files 
+# you can find the dataset I used at https://www.kaggle.com/datasets/ashishsaxena2209/animal-image-datasetdog-cat-and-panda/data
+
 path = "/Users/simon/.cache/kagglehub/datasets/ashishsaxena2209/animal-image-datasetdog-cat-and-panda/versions/1"
 
 def load_images_from_folder(folder,label):
