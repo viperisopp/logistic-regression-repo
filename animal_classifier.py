@@ -35,7 +35,7 @@ y_test = np.array(y_test)
 x_train = x_train.reshape(len(x_train),-1)
 x_test = x_test.reshape(len(x_test),-1)
 
-model = LogisticRegression()
+model = LogisticRegression(class_weight="balanced",max_iter=10000)
 model.fit(x_train,y_train)
 
 y_predict = model.predict(x_test)
