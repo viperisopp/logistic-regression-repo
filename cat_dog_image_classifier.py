@@ -3,6 +3,7 @@ import os
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
+from sklearn.model_selection import train_test_split
 
 # due to file size, I have not pushed the cat and dog image files 
 # you can find the dataset I used at https://www.kaggle.com/tongpython/cat-and-dog!
@@ -19,16 +20,16 @@ def load_images_from_folder(folder,label):
         training_target.append(label)
     return training_data, training_target
 
-cat_training, cat_training_target = load_images_from_folder("../training_set/cats/","cats")
-dog_training, dog_training_target = load_images_from_folder("../training_set/dogs/","dogs")
+cat_training, cat_training_target = load_images_from_folder("../catdog/training_set/cats/","cats")
+dog_training, dog_training_target = load_images_from_folder("../catdog/training_set/dogs/","dogs")
 
 training_data = cat_training + dog_training 
 training_target = cat_training_target + dog_training_target
 
 ################# visual separator #####################
 
-cat_testing, cat_testing_target = load_images_from_folder("../test_set/cats/","cats")
-dog_testing, dog_testing_target = load_images_from_folder("../test_set/dogs/","dogs")
+cat_testing, cat_testing_target = load_images_from_folder("../catdog/test_set/cats/","cats")
+dog_testing, dog_testing_target = load_images_from_folder("../catdog/test_set/dogs/","dogs")
 
 testing_data = cat_testing + dog_testing 
 testing_target = cat_testing_target + dog_testing_target
