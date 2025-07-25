@@ -3,7 +3,6 @@ import os
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
-from sklearn.model_selection import train_test_split
 
 # due to file size, I have not pushed the cat and dog image files 
 # you can find the dataset I used at https://www.kaggle.com/tongpython/cat-and-dog!
