@@ -19,8 +19,8 @@ def load_images_from_folder(folder,label):
         training_target.append(label)
     return training_data, training_target
 
-cat_training, cat_training_target = load_images_from_folder("../catdog/training_set/cats/","cats")
-dog_training, dog_training_target = load_images_from_folder("../catdog/training_set/dogs/","dogs")
+cat_training, cat_training_target = load_images_from_folder("catdog/training_set/cats/","cats")
+dog_training, dog_training_target = load_images_from_folder("catdog/training_set/dogs/","dogs")
 
 training_data = cat_training + dog_training 
 training_target = cat_training_target + dog_training_target
