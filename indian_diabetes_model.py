@@ -62,4 +62,5 @@ Takeaways:
     + normalization
     + min-max scaling
 - familiarized myself with more scikit-learn functions and sublibraries
+ts is so linkedin pilled
 '''
